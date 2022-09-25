@@ -39,13 +39,13 @@ def startup():
     #
     # print(f"屏幕的尺寸：{size}")  # 打印屏幕的尺寸
     # swipeUp(driver)
-    driver.close_app()
+    driver.close_app()  #相当于关闭页面
     print('关闭app')
     time.sleep(5)
     driver.launch_app()
     time.sleep(3)
     print('启动app')
-    driver.quit()
+    driver.quit()   # 杀死进程
 
 
 def getsize(driver):  # 获取屏幕尺寸
